@@ -2,13 +2,39 @@
     display: flex;
 }
 
+.row-odd {
+    display: flex;
+    background-color: rgb(201, 225, 233);
+    border-radius: 25px;
+}
+
+.row-even {
+    display: flex;
+    background-color: rgb(233, 164, 216);
+    border-radius: 25px;
+}
+
+.intro-paragraph {
+    padding-left: 1%;
+    padding-right: 5%;
+}
+
+.paragraph {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+}
+
 .column-left {
     flex: 40%;
+    padding-left: 3%;
 }
 
 .column-right {
     flex: 60%;
     padding-left: 5%;
+    padding-right: 2%;
+    padding-top: 2%;
 }
 
  /* Stack CSS */
@@ -34,10 +60,30 @@
 .out-of-line {
     position: relative;
     /* Adjust these values accordingly */
-    top: 5px;
+    top: 5.5px;
 }
 
 .name{
     margin-bottom: 0px;
 }
 
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  
+.column-problem {
+    padding-top: 3%;
+    padding-left: 1%;
+    flex: 50%;
+}
