@@ -4,18 +4,17 @@
 
 .row-odd {
     display: flex;
-    /* background-color: rgb(201, 225, 233); */
-    /* background-color: rgb(236, 176, 176); */
-    border-color: rgb(159, 211, 211);
+    border-color: rgb(211, 111, 81);
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
 }
 
+
 .row-even {
     display: flex;
     /* background-color: rgb(219, 188, 212); */
-    border-color: rgb(167, 199, 199);
+    border-color: rgb(104, 197, 201);
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
@@ -23,7 +22,7 @@
 
 .row-math {
     display: flex;
-    border-color: rgb(205, 214, 214);
+    border-color: rgb(216, 194, 94);
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
@@ -32,7 +31,7 @@
 .row-problems {
     display: flex;
     border-style: solid;
-    border-color: rgb(205, 214, 214);
+    border-color: rgb(216, 194, 94);
     border-radius: 25px; 
     border-width: 3px;
 }
@@ -43,7 +42,7 @@
     padding-top: 2%;
     padding-bottom: 2%;
     border-style: solid;
-    border-color: rgb(205, 214, 214);
+    border-color: rgb(92, 113, 206);
     border-radius: 25px;
     border-width: 3px;
 }
