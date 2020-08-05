@@ -68,6 +68,15 @@
     flex: 48.8%;
 }
 
+.column-left-top {
+    flex: 55%;
+}
+
+.column-right-top {
+    flex: 45%;
+    padding-left: 3%;
+}
+
 .out-of-line {
     position: relative;
     /* Adjust these values accordingly */
@@ -98,7 +107,7 @@ p {
 }
 
 /* Go from 2 columns to 1 */
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 790px) {
 
     .row {
         flex-wrap: wrap;
