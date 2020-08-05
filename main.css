@@ -1,39 +1,29 @@
 .row {
     display: flex;
-}
-
-.row-odd {
-    display: flex;
-    border-color: rgb(211, 111, 81);
+    flex-wrap: nowrap;
     border-radius: 25px;
     border-style: solid;
     border-width: 3px;
 }
 
+.row-top {
+    border-style: none;
+}
 
-.row-even {
-    display: flex;
-    /* background-color: rgb(219, 188, 212); */
+.row-research {
     border-color: rgb(104, 197, 201);
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 3px;
+}
+
+.row-projects {
+    border-color: rgb(211, 111, 81);
 }
 
 .row-math {
-    display: flex;
     border-color: rgb(216, 194, 94);
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 3px;
 }
 
 .row-problems {
-    display: flex;
-    border-style: solid;
     border-color: rgb(216, 194, 94);
-    border-radius: 25px; 
-    border-width: 3px;
 }
 
 .intro-paragraph {
@@ -84,11 +74,12 @@
     top: 5.5px;
 }
 
-.stack-item-1 {
+.devhealh-landing-page {
     padding-top: 3%;
+    margin-bottom: 0%; 
 }
 
-.name{
+.name {
     margin-bottom: 0px;
 }
 
@@ -99,10 +90,40 @@
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-  }
+}
 
-  p {
+p {
     text-align: justify;
     text-justify: inter-word;
-  }
+}
 
+/* Go from 2 columns to 1 */
+@media only screen and (max-width: 765px) {
+
+    .row {
+        flex-wrap: wrap;
+    }
+    
+    .column-left {
+        padding-right: 2%;
+    }
+    
+    .column-right {
+        padding-left: 2%;
+        padding-top: 0%;
+    }
+    
+    .column-problem-left {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .stack-item-1 {
+        padding-top: 0%;
+    }
+
+    p {
+        text-align: justify;
+        text-justify: none;
+    }
+}
