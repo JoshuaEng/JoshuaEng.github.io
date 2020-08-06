@@ -35,11 +35,18 @@
             <a href="https://www.linkedin.com/in/joshuaengels/" target="_blank"><i
                     class="fa fa-lg fa-linkedin-square fa-3x"></i></a>
             <a href="https://github.com/JoshuaEng/" target="_blank"><i class="fa fa-lg fa-github-square fa-3x"></i></a>
-            <a href="https://scholar.google.com/citations?user=yVPnVK8AAAAJ&hl=en"
-                target="_blank"><i class="ai ai-google-scholar-square ai-3x scholar-icon"></i></a>
-            <a style="font-size: 0.82em" href="https://drive.google.com/file/d/1FtIyAowqQbrX_Mibuyoz8f57c7WcsUgO/view?usp=sharing" target="_blank">
+            <a href="https://scholar.google.com/citations?user=yVPnVK8AAAAJ&hl=en" target="_blank"><i
+                    class="ai ai-google-scholar-square ai-3x scholar-icon"></i></a>
+            <a style="font-size: 0.82em"
+                href="https://drive.google.com/file/d/1FtIyAowqQbrX_Mibuyoz8f57c7WcsUgO/view?usp=sharing"
+                target="_blank">
                 <i class="fas fa-file-alt fa-3x resume-icon"></i>
             </a>
+            <!-- <br>
+            <br>
+            <a><i class="source-icon fas fa-sm fa-code"></i></a> 
+            <a class="source-link" href="https://github.com/JoshuaEng/JoshuaEng.github.io" target="_blank">https://github.com/JoshuaEng/JoshuaEng.github.io</a>
+ -->
 
 
         </div>
@@ -83,15 +90,18 @@
             <h4>Simulated Voting </h4>
             <p>A framework I built to simulate a wide variety of full ballot voting strategies and ballots,
                 with the end goal of using the mistakes the models make to identify ballot deficiencies.
-                <br><br>
-                <a href="https://iccm-conference.neocities.org/2020/papers/Contribution_137_final.pdf"
-                    target="_blank"><button type="button">Paper</button></a>
-                <a href="https://www.youtube.com/watch?v=chfEkkc8ySE&t" target="_blank"><button type="button">Video
-                        Presentation</button></a>
-                <br><br>
-                <a href="https://github.com/JoshuaEng/VotingModelf" target="_blank"><button type="button">View
-                        Code</button></a>
             </p>
+            <a class="external-button"
+                href="https://iccm-conference.neocities.org/2020/papers/Contribution_137_final.pdf"
+                target="_blank"><button type="button">Paper</button></a>
+            <a class="external-button" href="https://www.youtube.com/watch?v=chfEkkc8ySE&t" target="_blank"><button
+                    type="button">Video
+                    Presentation</button></a>
+            <br>
+            <br>
+            <a class="external-button" href="https://github.com/JoshuaEng/VotingModel" target="_blank"><button
+                    type="button">View
+                    Code</button></a>
         </div>
         <div class="column-right">
             <img src="./assets/img/voting-v1.gif" alt="Voting with mistakes">
@@ -107,7 +117,8 @@
             <p>A clean and simple chrome extension that displays a fully functional
                 browser of wikipedia pages in a tooltip in response to highlighted words or phrases.
                 <br><br>
-                <a href="https://github.com/JoshuaEng/JJRE_HackRice9" target="_blank"><button type="button">View
+                <a class="external-button" href="https://github.com/JoshuaEng/JJRE_HackRice9" target="_blank"><button
+                        type="button">View
                         Code</button></a>
             </p>
         </div>
@@ -123,15 +134,15 @@
             <p>A background Electron app that tracks posture using a PoseNet model
                 and notifies the user when they are slouching.
                 <br><br>
-                <a href="https://github.com/JoshuaEng/Dev-Health/tree/master/tt/demos" target="_blank"><button
-                        type="button">View Code</button></a>
+                <a class="external-button" href="https://github.com/JoshuaEng/Dev-Health/tree/master/tt/demos"
+                    target="_blank"><button type="button">View Code</button></a>
                 <img class="devhealh-landing-page" src="./assets/img/dev-health3.jpg" alt="DevHealth landing page">
             </p>
         </div>
         <div class="column-right">
-                <img src="./assets/img/dev-health2.JPG" alt="DevHealth tracking page">
-            </div>
+            <img src="./assets/img/dev-health2.JPG" alt="DevHealth tracking page">
         </div>
+    </div>
     </div>
     <hr>
 
@@ -141,7 +152,8 @@
         <div class="paragraph">
             <h4>Project Euler</h4>
             <p>
-                <a href="https://projecteuler.net" target="_blank">Project Euler</a> is a collection of mathematical programming challenges.
+                <a href="https://projecteuler.net" target="_blank">Project Euler</a> is a collection of mathematical
+                programming challenges.
                 It got me into programming many years ago, and so holds a special
                 place in my heart. I've never really stopped solving problems, and
                 as the quality of my math and programming skills has increased so has the difficulty
@@ -163,6 +175,56 @@
         </div>
     </div>
     <br>
-
+    <div class="row row-math">
+        <div class="paragraph">
+            <h4>How to Reverse Entropy</h4>
+            <p>
+                I'll leave off with a little story of the making of the
+                "howdy" gif to sate your curiosity (I get a lot of requests about it,
+                and by that I mean one so far). 
+                <br><br>
+                I cannot do the story justice within this margin, but long ago 
+                I was captivated by the idea of creating the "perfect" bouncing
+                ball simulation. Instead of updating each ball and checking for a 
+                collision, a horribly inexact updating mechanism, I projected each
+                balls' path and calculated the exact intersection time for each pair, 
+                then found the minimum over all such times to find the next collision.
+                <br><br>
+                Unfortunately and to my horror, I eventually realized my simulation
+                <i>wasn't</i> perfect:
+                the exact solution for collision times involved square roots and 
+                thus irrational numbers, and the position vector had only finite precision. 
+                Even worse, because I was simulating a chaotic system, after a
+                few hundred collisions the results of my simulation would have
+                widely diverged from the exact solution.
+                <br><br>
+                Distraught, I wondered if it all my work was for naught. Was it
+                even possible to construct a perfect bouncing ball simulation? 
+                The repo fell into disrepair. (As a side note, I think the answer is
+                no with finite compute + space, but I have some ideas for ball 
+                simulation version 2 that will delay the problem for as long as possible.) 
+                <br><br>
+                However, when I was building this website I needed a 
+                "hook" to drag a reader in (maybe it worked? you've read this far after all). 
+                "Ah hah," I thought to myself, "what if I could repurpose
+                my old work!" I hatched a hair brained scheme: setup a careful
+                arangement of balls, then turn on a screen recorder, let the balls
+                bounce, and then <i>reverse</i> the recording! 
+                <br><br>
+                6 hours of implementation details later (see the
+                <a href="https://github.com/JoshuaEng/GasSimulation" target="_blank">repo</a>)
+                I was done!
+                And that's the story of how I reversed entropy. Perhaps unsurpisingly, 
+                like a video of an egg getting unscrambled, the secret is simple
+                movie magic.
+                <br><br>
+                So it goes.
+            </p>
+        </div>
+    </div>
+    <br>
 </body>
+
+
+
 </html>
