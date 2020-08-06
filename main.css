@@ -77,10 +77,16 @@
     padding-left: 3%;
 }
 
-.out-of-line {
+.scholar-icon {
     position: relative;
-    /* Adjust these values accordingly */
     top: 5.5px;
+}
+
+.resume-icon {
+    padding-left: 1%;
+    position: relative;
+    top: 3px;
+    transform: scale(1.2,1);
 }
 
 .devhealh-landing-page {
