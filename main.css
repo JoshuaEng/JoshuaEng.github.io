@@ -85,7 +85,7 @@ img {
 
 .devhealh-landing-page {
     padding-top: 13.6%;
-    margin-bottom: 0%; 
+    padding-bottom: 2%; 
 }
 
 .name {
@@ -114,12 +114,17 @@ p {
     }
     
     .column-left {
-        padding-right: 2%;
+        padding-right: 3%;
+        padding-left: 3%;
+        padding-top: 0%;
+        padding-bottom: 0%;
     }
     
     .column-right {
-        padding-left: 2%;
+        padding-right: 3%;
+        padding-left: 3%;
         padding-top: 0%;
+        padding-bottom: 0%;
     }
     
     .column-problem-left {
