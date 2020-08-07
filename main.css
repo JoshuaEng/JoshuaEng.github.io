@@ -6,6 +6,14 @@
     border-width: 3px;
 }
 
+/* Fixes things bootstrap import broke */
+img {
+    box-sizing: content-box;
+}
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
 .row-top {
     border-style: none;
 }
@@ -15,7 +23,7 @@
 }
 
 .row-projects {
-    border-color: rgb(211, 111, 81);
+    border-color: rgb(0,85,170);
 }
 
 .row-math {
@@ -26,15 +34,8 @@
     border-color: rgb(216, 194, 94);
 }
 
-.intro-paragraph {
-    padding-left: 2%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-style: solid;
-    border-color: rgb(92, 113, 206);
-    border-radius: 25px;
-    border-width: 3px;
+.row-intro {
+    border-color: rgb(211, 111, 81);
 }
 
 .paragraph {
@@ -90,7 +91,7 @@
 }
 
 .devhealh-landing-page {
-    padding-top: 3%;
+    padding-top: 13.6%;
     margin-bottom: 0%; 
 }
 
@@ -113,7 +114,7 @@ p {
 }
 
 /* Go from 2 columns to 1 */
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 840px) {
 
     .row {
         flex-wrap: wrap;
@@ -140,4 +141,33 @@ p {
     p {
         text-align: left;
     }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(0,85,170);
+    z-index: 999;
+    width: 200%;
+    text-align: left;
+}
+
+.navbar {
+    padding: 0;
+    margin: -2rem calc(0px - (50vw - 50%)) 2rem;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    height: 1%;
+}
+
+.nav-item {
+    font-size: 150%;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+a {
+    color: rgb(0,85,170) !important;
 }

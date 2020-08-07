@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="Intro">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Engels</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -17,15 +19,36 @@
 </head>
 
 <body>
-    <!-- <header>
-        <nav>
-            Shortcuts: 
-            <a href="">Top</a> |
-            <a href="#research">Research</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#mathcs">Math + CS Fun</a>
-        </nav>
-    </header> -->
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-md navbar navbar-light sticky">
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Quick links -->
+        <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item"><a class="nav-link">
+                    Quicklinks: 
+                </a></li>                 -->
+                <li class="nav-item"><a class="nav-link" href="#Intro">
+                        Intro |
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="#Research">
+                        Research |
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="#Projects">
+                        Projects |
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" href="#MathCS">
+                        Math + CS Fun
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
 
     <!-- Top material -->
     <div class="row row-top">
@@ -58,33 +81,38 @@
     <hr>
 
     <!-- Intro paragraph -->
-    <div class="intro-paragraph">
-        <!-- About me -->
-        <p>Howdy! I'm Josh, a junior at Rice University studying Computer Science
-            and Math.
-        </p>
-        <p>
-            First things first, I'm <strong>definetely not</strong> a web developer!
-            My interests instead lie at the intersection of math and computer science.
-            I love algorithms and foundational CS theory; I especially enjoyed my time at Two Sigma last
-            summer doing distributed storage work. The summer before that I was at John Deere working as a
-            software engineering intern.
-        </p>
-        <p>
-            I'm also proud of my research modeling voting errors over
-            the past couple years in
-            <a href="https://psychology.rice.edu/human-factors-human-computer-interaction" target="_blank">Rice's Human
-                Computer Interaction Lab</a>
-            (see below for a gif and a link to my first author paper). This
-            upcoming fall I'm going to start doing work in
-            <a href="https://rushlab.blogs.rice.edu/" target="_blank">Rice's Sketching and Hashing Lab</a>, and
-            I couldn't be more excited!
-        </p>
-        <p>
-            In my free time, I like to run and go backpacking. Luckily
-            those, along with programming, can all be practiced at a safe social distance.
-        </p>
+    <div class="row row-intro">
+        <div class="paragraph">
+            <!-- About me -->
+            <p>Howdy! I'm Josh, a junior at Rice University studying Computer Science
+                and Math.
+            </p>
+            <p>
+                First things first, I'm <strong>definetely not</strong> a web developer!
+                My interests instead lie at the intersection of math and computer science.
+                I love algorithms and foundational CS theory; I especially enjoyed my time at Two Sigma last
+                summer doing distributed storage work. The summer before that I was at John Deere working as a
+                software engineering intern.
+            </p>
+            <p>
+                I'm also proud of my research modeling voting errors over
+                the past couple years in
+                <a href="https://psychology.rice.edu/human-factors-human-computer-interaction" target="_blank">Rice's
+                    Human
+                    Computer Interaction Lab</a>
+                (see below for a gif and a link to my first author paper). This
+                upcoming fall I'm going to start doing work in
+                <a href="https://rushlab.blogs.rice.edu/" target="_blank">Rice's Sketching and Hashing Lab</a>, and
+                I couldn't be more excited!
+            </p>
+            <p>
+                In my free time, I like to run and go backpacking. Luckily
+                those, along with programming, can all be practiced at a safe social distance.
+            </p>
+        </div>
     </div>
+    <a name="Research"></a>
+    <br>
     <hr>
 
     <!-- Research -->
@@ -111,6 +139,8 @@
             <img src="./assets/img/voting-v1.gif" alt="Voting with mistakes">
         </div>
     </div>
+    <a name="Projects"></a>
+    <br>
     <hr>
 
     <!-- Projects -->
@@ -137,17 +167,19 @@
             <h4>DevHealth </h4>
             <p>A background Electron app that tracks posture using a PoseNet model
                 and notifies the user when they are slouching.
-                <br><br>
-                <a class="external-button" href="https://github.com/JoshuaEng/Dev-Health/tree/master/tt/demos"
-                    target="_blank"><button type="button">View Code</button></a>
-                <img class="devhealh-landing-page" src="./assets/img/dev-health3.jpg" alt="DevHealth landing page">
+                <br>
             </p>
+            <a class="external-button" href="https://github.com/JoshuaEng/Dev-Health/tree/master/tt/demos"
+                target="_blank"><button type="button">View Code</button></a>
+            <img class="devhealh-landing-page" src="./assets/img/dev-health3.jpg" alt="DevHealth landing page">
         </div>
         <div class="column-right">
             <img src="./assets/img/dev-health2.JPG" alt="DevHealth tracking page">
         </div>
     </div>
     </div>
+    <a name="MathCS"></a>
+    <br>
     <hr>
 
     <!-- Math and CS -->
@@ -185,41 +217,41 @@
             <p>
                 I'll leave off with a little story of the making of the
                 "howdy" gif to sate your curiosity (I get a lot of requests about it,
-                and by that I mean one so far). 
+                and by that I mean one so far).
                 <br><br>
-                I can't do the story justice within this margin, but long ago 
+                I can't do the story justice within this margin, but long ago
                 I was captivated by the idea of creating the "perfect" bouncing
-                ball simulation. Instead of updating each ball and checking for a 
+                ball simulation. Instead of updating each ball and checking for a
                 collision, a horribly inexact updating mechanism, I projected each
-                balls' path and calculated the exact intersection time for each pair, 
+                balls' path and calculated the exact intersection time for each pair,
                 then found the minimum over all such times to find the next collision.
                 <br><br>
                 Unfortunately and to my horror, I eventually realized my simulation
                 <i>wasn't</i> perfect:
-                the exact solution for collision times involved square roots and 
-                thus irrational numbers, and the position vector had only finite precision. 
+                the exact solution for collision times involved square roots and
+                thus irrational numbers, and the position vector had only finite precision.
                 Even worse, because I was simulating a chaotic system, after a
                 few hundred collisions the results of my simulation would have
                 wildly diverged from the exact solution.
                 <br><br>
                 Distraught, I wondered if it all my work was for naught. Was it
-                even possible to construct a perfect bouncing ball simulation? 
+                even possible to construct a perfect bouncing ball simulation?
                 The repo fell into disrepair. (As a side note, I think the answer is
-                no with finite compute + space, but I have some ideas for ball 
-                simulation version 2 that will delay the problem for as long as possible.) 
+                no with finite compute + space, but I have some ideas for ball
+                simulation version 2 that will delay the problem for as long as possible.)
                 <br><br>
-                Two years pass, and we come to the modern day. When I was building 
+                Two years pass, and we come to the modern day. When I was building
                 this website I needed a "hook" to draw the reader in
-                (maybe it worked? you've read this far after all). 
+                (maybe it worked? you've read this far after all).
                 "Aha!" I thought to myself, "What if I could repurpose
                 my old work!" I proceeded to hatch a harebrained scheme: setup a careful
                 arangement of balls, then turn on a screen recorder, let the balls
-                bounce, and then <i>reverse</i> the recording! 
+                bounce, and then <i>reverse</i> the recording!
                 <br><br>
                 6 hours of implementation details later (see the
                 <a href="https://github.com/JoshuaEng/GasSimulation" target="_blank">repo</a>)
                 I was done!
-                And that's the story of how I reversed entropy. Perhaps unsurpisingly, 
+                And that's the story of how I reversed entropy. Perhaps unsurpisingly,
                 like a video of an egg getting unscrambled, the secret is simple
                 movie magic.
                 <br><br>
