@@ -1,5 +1,3 @@
-Add comment about complete graph
-Link to source code
-Link to resume
+Add graph of connections of public platforms
+Link to website source code
 Ask iccm about google scholar
-Edit text
