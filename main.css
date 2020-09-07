@@ -152,7 +152,7 @@ p {
 .navbar {
     padding: 0;
     margin: -2rem calc(0px - (50vw - 50%)) 2rem;
-    padding-left: calc(50vw - 50%);
+    padding-left: calc(50vw - 55%);
     height: 1%;
 }
 
